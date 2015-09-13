@@ -56,6 +56,9 @@ ext = re.exec( '/foo/bar/home.html' )[ 1 ];
 ext = re.exec( 'foo/file.pdf' )[ 1 ];
 // returns '.pdf'
 
+ext = re.exec( 'beep.' )[ 1 ];
+// returns '.'
+
 ext = re.exec( '' )[ 1 ];
 // returns ''
 

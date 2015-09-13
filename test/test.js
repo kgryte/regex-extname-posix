@@ -34,7 +34,8 @@ describe( 'regex-extname-posix', function tests() {
 			'foo/bar/home.html/',
 			'.gitigno.re',
 			'/foo/bar/.editorconf.ig',
-			'main/.travis.yml'
+			'main/.travis.yml',
+			'boop.'
 		];
 
 		expected = [
@@ -45,7 +46,8 @@ describe( 'regex-extname-posix', function tests() {
 			'.html',
 			'.re',
 			'.ig',
-			'.yml'
+			'.yml',
+			'.'
 		];
 
 		for ( i = 0; i < values.length; i++ ) {
@@ -67,7 +69,6 @@ describe( 'regex-extname-posix', function tests() {
 			'.jshintrc',
 			'jshintignore',
 			'beep',
-			'boop.',
 			'/foo/bar/file/'
 		];
 

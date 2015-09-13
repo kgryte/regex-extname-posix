@@ -16,6 +16,10 @@ ext = re.exec( 'foo/file.pdf' )[ 1 ];
 console.log( ext );
 // returns '.pdf'
 
+ext = re.exec( 'beep.' )[ 1 ];
+console.log( ext );
+// returns '.'
+
 ext = re.exec( '' )[ 1 ];
 console.log( ext );
 // returns ''
